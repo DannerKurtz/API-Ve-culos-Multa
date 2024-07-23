@@ -1,0 +1,30 @@
+POST http://localhost:3000/api/multas
+Content-Type: application/json
+
+{
+    "article": "Artigo teste",
+    "description": "test",
+    "Penalty": "Penalidade - multa (dez vezes), suspensão do direito de dirigir e apreensão do veículo;",
+    "value": 2934.70
+}
+
+###
+GET http://localhost:3000/api/multas
+
+###
+GET http://localhost:3000/api/multas/669fb3e38cca4780702f113f
+
+###
+DELETE http://localhost:3000/api/multas/669fb8c8600cfb4a14a30f56
+
+###
+PUT http://localhost:3000/api/multas/669fb3e38cca4780702f113f
+Content-Type: application/json
+
+{
+    "article": "Artigo 167 (CTB)",
+      "description": "Infração por não usar o cinto de segurança",
+      "infringement": "Grave",
+      "Penalty": "Multa",
+      "value": 195.23
+}
